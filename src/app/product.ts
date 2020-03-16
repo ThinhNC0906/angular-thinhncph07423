@@ -1,6 +1,5 @@
-export class product{
+export class Product{
+  id: number;
   name: string;
-  price: number;
   desc: string;
-  status: boolean;
 }
