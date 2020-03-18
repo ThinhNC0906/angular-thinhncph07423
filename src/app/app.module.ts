@@ -9,10 +9,11 @@ import { SlideComponent } from './slide/slide.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductComponent, ProductManagerComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductComponent, ProductManagerComponent, ProductDetailComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
