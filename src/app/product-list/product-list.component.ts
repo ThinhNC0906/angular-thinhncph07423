@@ -12,12 +12,12 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit() {
   }
-  products = data;
-  selected: Product;
-  showDetail(product){
-    this.selected = product;
-  }
-  removeItem(id){
-    return this.products = this.products.filter(product => product.id != id);
-  }
+  // products = data;
+  // selected: Product;
+  // showDetail(product){
+  //   this.selected = product;
+  // }
+  // removeItem(id){
+  //   return this.products = this.products.filter(product => product.id != id);
+  // }
 }
