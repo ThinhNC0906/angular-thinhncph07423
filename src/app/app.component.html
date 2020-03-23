@@ -30,21 +30,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" routerLink="/product-manager">Home
+            <a class="nav-link" routerLink="/product-manager" routerLinkActive="active">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/about">About</a>
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" routerLink="/Services" routerLinkActive="active">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" routerLink="/Contact"routerLinkActive="active">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/add-product">Add</a>
+            <a class="nav-link" routerLink="/add-product" routerLinkActive="active">Add</a>
           </li>
         </ul>
       </div>
@@ -53,28 +53,8 @@
 
   <!-- Page Content -->
   <div class="container">
-
-    <div class="row">
-
-      <div class="col-lg-3">
-
-        <app-category></app-category>
-
-      </div>
-      <!-- /.col-lg-3 -->
-
-      <div class="col-lg-9">
-        <router-outlet><app-add-product></app-add-product></router-outlet>
-        
-<!-- <app-product-manager></app-product-manager>
-        <app-slide></app-slide>
-
-        <app-product-list></app-product-list> -->
-      </div>
-      <!-- /.col-lg-9 -->
-
-    </div>
-    <!-- /.row -->
+ <router-outlet></router-outlet>
+ 
 
   </div>
   <!-- /.container -->

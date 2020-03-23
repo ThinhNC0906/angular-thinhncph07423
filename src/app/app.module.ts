@@ -15,6 +15,7 @@ import { ProductService } from './services/product.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   // declarations: [
   //   AppComponent,
@@ -27,7 +28,7 @@ import { HomeComponent } from './home/home.component';
   //   AboutComponent
   // ],
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductComponent, ProductManagerComponent, ProductDetailComponent, AddProductComponent, AboutComponent, HomeComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, SlideComponent, CategoryComponent, ProductComponent, ProductManagerComponent, ProductDetailComponent, AddProductComponent, AboutComponent, HomeComponent, NotFoundComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
   
