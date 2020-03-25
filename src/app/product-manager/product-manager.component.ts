@@ -10,8 +10,8 @@ import { ProductService } from "../services/product.service";
 export class ProductManagerComponent implements OnInit {
   products: Product[];
   constructor(private productService: ProductService) {}
-  ngOnInit() {
-    this.Products();
+  ngOnInit(): void {
+    this.getProducts();
   }
   // ngOnInit(): void {
   //   this.products = this.productService.getProducts();
@@ -25,9 +25,7 @@ export class ProductManagerComponent implements OnInit {
     this.products = this.productService.removeProduct(id);
     //   return this.products = this.products.filter(product => product.id != id);
   }
-  getProduct() {
-    this.productService.getProducts().subscribe(data => {
-      this.products = data;
-    });
+  getProducts() {
+    this.productService.getProducts().subscribe(response => this.products = response, error => console.log(error));
   }
 }
