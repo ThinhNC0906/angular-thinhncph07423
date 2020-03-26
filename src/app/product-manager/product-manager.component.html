@@ -15,7 +15,9 @@
               <th><a routerLink="/product-detail/{{product.name}}">{{product.name}}</a></th>
               <th><p routerLink="/product-detail/{{product.desc}}">{{product.desc}}</p></th>
               <th>
-                <button data-target="#showDetail"  data-toggle="modal" class="btn btn-primary"routerLink="showDetail(product.id)" >Show InFor</button> &nbsp;
+                <div class="card-footer">
+					<a routerLink="/product/{{product.id}}" class="btn btn-primary">Chi tiết</a>
+				</div> &nbsp;
               <button class="btn btn-primary" (click)="removeItem(product.id)">Detele</button>
               </th>
             </tr>

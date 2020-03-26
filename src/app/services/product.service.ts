@@ -14,9 +14,13 @@ export class ProductService {
     return this.http.get<Product[]>(`${this.api}/product`);
     // return this.products;
   }
-  getProduct(id) {
-    return this.products.find(product => product.id == id);
+  getProduct(id): Observable<Product>{
+    console.log(id);
+    return this.http.get<Product>(`${this.api}/product/${id}`);
   }
+  // getProduct(id) {
+  //   return this.products.find(product => product.id == id);
+  // }
   removeProduct(id) {
     return (this.products = this.products.filter(product => product.id != id));
   }

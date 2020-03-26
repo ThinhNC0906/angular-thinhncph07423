@@ -1,8 +1,18 @@
 <div class="row" > 
   
+<div class="modal-dialog">
+<div class="row" *ngIf="product">
   <div class="col-6">
-ID: {{product.id}}
-tên sản phẩm :{{product.name}}
-mota: {{product.desc}}
+    <img src="{{product.img}}" alt="" class="img-fluid">
+  </div>
+  <div class="col-6">
+    <h3>{{product.id}}</h3>
+    <h2>{{product.name}}</h2>
+    <!-- <span>${{product.price}}</span> -->
+    <p>{{product.desc}}</p>
+    <p>Tình trạng: {{ product.status ? 'Còn hàng' : 'Hết hàng'}}</p>
+    
+  </div>
+  
 </div>
 </div>
