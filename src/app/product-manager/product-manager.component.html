@@ -12,10 +12,10 @@
             
             <tr *ngFor="let product of products">
               <th><a routerLink="/product-detail/{{product.id}}">{{product.id}}</a></th>
-              <th><a routerLink="/product-detail/{{product.id}}">{{product.name}}</a></th>
-              <th><p routerLink="/product-detail/{{product.id}}">{{product.desc}}</p></th>
+              <th><a routerLink="/product-detail/{{product.name}}">{{product.name}}</a></th>
+              <th><p routerLink="/product-detail/{{product.desc}}">{{product.desc}}</p></th>
               <th>
-                <button data-target="#showDetail"  data-toggle="modal" class="btn btn-primary" (click)="showDetail(product)">Show InFor</button> &nbsp;
+                <button data-target="#showDetail"  data-toggle="modal" class="btn btn-primary"routerLink="showDetail(product.id)" >Show InFor</button> &nbsp;
               <button class="btn btn-primary" (click)="removeItem(product.id)">Detele</button>
               </th>
             </tr>

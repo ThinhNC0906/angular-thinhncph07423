@@ -28,4 +28,5 @@ export class ProductManagerComponent implements OnInit {
   getProducts() {
     this.productService.getProducts().subscribe(response => this.products = response, error => console.log(error));
   }
+
 }
