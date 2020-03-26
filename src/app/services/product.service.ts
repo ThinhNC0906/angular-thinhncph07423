@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
 
 @Injectable()
 export class ProductService {
-  // products = data;
+  products = data;
   api = "https://5e7afc840e0463001633284b.mockapi.io";
   constructor(private http: HttpClient) {}
 
